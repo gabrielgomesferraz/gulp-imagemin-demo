@@ -18,11 +18,11 @@ const $ = gulpLoadPlugins();
 
 
 // Optimize images
-gulp.task('images', () =>
-  gulp.src('app/assets/images/**')
-    .pipe($.imagemin({
-      progressive: true,
-      interlaced: true
-    }))
-    .pipe(gulp.dest('build/images'))
-);
+gulp.task('images', function () {
+  return gulp.src('app/assets/images/**')
+   .pipe($.imagemin({
+     progressive: true,
+     interlaced: true
+   }))
+   .pipe(gulp.dest('build/images'));
+});
