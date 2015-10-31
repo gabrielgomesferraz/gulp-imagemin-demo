@@ -5,8 +5,8 @@
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "babel-core": "^5.8.25",
-    "gulp-imagemin": "^2.3.0",
     "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.4.0",
     "gulp-load-plugins": "^1.0.0"
   },
   "scripts": {
