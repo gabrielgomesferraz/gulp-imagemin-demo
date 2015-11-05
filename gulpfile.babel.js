@@ -17,13 +17,12 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 const $ = gulpLoadPlugins();
 
 
-/*jshint esnext: true */
 // Optimize images
-gulp.task('images', () => {
-  return gulp.src('app/assets/images/**/*')
+gulp.task('images', () =>
+  gulp.src('app/assets/images/**/*')
     .pipe($.imagemin({
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('build/images'));
-});
+    .pipe(gulp.dest('build/images'))
+);
